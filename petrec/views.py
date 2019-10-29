@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 
 def home(request):
@@ -6,3 +6,6 @@ def home(request):
 
 def anuncio(request):
     return render(request,'anuncio.html')
+
+def cadastro(request):
+    return render(request,'cadastro.html')

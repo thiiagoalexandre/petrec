@@ -12,7 +12,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
   }
 
   #navbar {
@@ -34,7 +33,7 @@
     width: 80px;
     height: 80px;
     background: #a9b478;
-    border-radius: 29px;
+    border-radius: 45px;
   }
 
   #navbar h1 {
@@ -50,7 +49,6 @@
     padding: .2rem;
     margin-bottom: .2rem;
     width: 60px;
-    font-family: sans-serif;
   }
 
   .btn:hover {
@@ -58,12 +56,10 @@
     cursor: pointer;
   }
 
-  #main div{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 25px;
-
-
+  #main form{
+    display: grid;
+    padding: 50px;
+    align-items: center;
   }
 
 
@@ -73,10 +69,13 @@
 <body>
 
 <nav id="navbar">
-  <img src="pata_index.png" alt="Logo">
+  <a href="{%url 'Home'%}">
+    <img src="">
+  </a>
+
   <h1>Pet <br> Rec</h1>
   <div>
-    <button class="btn" href="{% url 'Cadastro' %}"> Cadastro</button>
+    <button class="btn" > Cadastro</button>
     <br>
     <button class="btn"> Login</button>
     <br>
@@ -86,18 +85,19 @@
 </nav>
 
 <main id="main">
-  <div>
-    <p>
-      Parte onde conta uma história e
-      o funcionamento do site.
-      Seu pet querido está perdido ou encontrou algum na rua? <br>Anuncie
-      aqui para que possa encontrá-lo
-    </p>
-  </div>
-  <div>
+  <form>
+    {% csrf_token %}
+    <input type="text" name="nome completo" placeholder="Nome Completo"><br>
+    <input type="text" name="cpf" placeholder="CPF" maxlength="11" ><br>
+    <input type="text" name="email" placeholder="E-mail"><br>
+    <input type="text" name="telefone" placeholder="Telefone" maxlength="11" ><br>
+    <input type="password" name="senha" placeholder="Senha"><br>
+    <input type="password" name="confirm senha" placeholder="Confirme a senha"><br>
+
+  </form>
 
 
-  </div>
+
 </main>
 
 </body>
