@@ -1,9 +1,9 @@
 <!DOCTYPE html>
+{% load media %}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Home PetRec</title>
-  <link rel="stylesheet" type="text/css" href="./home.css">
 </head>
 
 
@@ -12,6 +12,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
   }
 
   #navbar {
@@ -30,10 +31,10 @@
   }
 
   #navbar img {
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     background: #a9b478;
-    border-radius: 45px;
+    border-radius: 29px;
   }
 
   #navbar h1 {
@@ -56,6 +57,12 @@
     cursor: pointer;
   }
 
+  #main form{
+    display: grid;
+    padding: 75px;
+    align-items: center;
+  }
+
 
 </style>
 
@@ -63,13 +70,16 @@
 <body>
 
 <nav id="navbar">
-  <a href="{%url 'Home'%}">
-    <img src="">
+  <a href="{%url 'home'%}">
+    <img src="{% media "pata_index.png" %}">
   </a>
 
   <h1>Pet <br> Rec</h1>
   <div>
-    <button class="btn"> Cadastro</button>
+    <button class="btn" >
+      <a href="{% url 'cadastro' %}"
+      Cadastro
+    </button>
     <br>
     <button class="btn"> Login</button>
     <br>
@@ -79,15 +89,15 @@
 </nav>
 
 <main id="main">
-  <div>
-    <h4>
+<form method="post">
+  {%csrf_token%}
+  {{ form.as_p }}
+  <br>
+  <br>
+  <button type="submit">Enviar</button>
 
-    </h4>
-  </div>
-  <div>
-    <img src="">
+</form>
 
-  </div>
 </main>
 
 </body>

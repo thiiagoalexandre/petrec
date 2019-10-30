@@ -1,0 +1,6 @@
+ <input type="text" name="nome completo" placeholder="Nome Completo"><br>
+    <input type="text" name="cpf" placeholder="CPF" maxlength="11" ><br>
+    <input type="text" name="email" placeholder="E-mail"><br>
+    <input type="text" name="telefone" placeholder="Telefone" maxlength="11" ><br>
+    <input type="password" name="senha" placeholder="Senha"><br>
+    <input type="password" name="confirm senha" placeholder="Confirme a senha"><br>

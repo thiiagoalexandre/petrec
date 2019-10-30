@@ -1,9 +1,9 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Home PetRec</title>
-  <link rel="stylesheet" type="text/css" href="./home.css">
 </head>
 
 
@@ -31,8 +31,8 @@
   }
 
   #navbar img {
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     background: #a9b478;
     border-radius: 29px;
   }
@@ -58,7 +58,7 @@
     cursor: pointer;
   }
 
-  #main div{
+  #main div {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 25px;
@@ -73,14 +73,16 @@
 <body>
 
 <nav id="navbar">
-  <img src="pata_index.png" alt="Logo">
+
+  <img src="{% static "pata_index.png" %}">
   <h1>Pet <br> Rec</h1>
   <div>
-    <button class="btn" href="{% url 'Cadastro' %}"> Cadastro</button>
+    <button type="button" class="btn"> Cadastro</button>
     <br>
-    <button class="btn"> Login</button>
+
+    <button type="button" class="btn"> Login</button>
     <br>
-    <button class="btn"> Anunciar</button>
+    <button type="button" class="btn"> Anunciar</button>
   </div>
 
 </nav>
