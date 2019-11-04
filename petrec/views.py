@@ -10,6 +10,10 @@ def anuncio(request):
     return render(request, 'petrec/anuncio.html')
 
 
+def login(request):
+    return render(request, 'petrec/login.html')
+
+
 def cadastro(request):
     data = {}
     form = AddDog(request.POST or None)
@@ -19,5 +23,3 @@ def cadastro(request):
 
     data['form'] = form
     return render(request, 'peterec/cadastro.html', {'form': form})
-
-

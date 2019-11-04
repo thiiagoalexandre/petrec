@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load media %}
+{% load static %}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,11 +13,14 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
+
+
   }
 
   #navbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+  / / grid-template-columns: 1 fr 1 fr 1 fr;
     align-items: center;
     padding: 10px;
     background-color: #b9b5a9;
@@ -27,6 +30,7 @@
   #main {
     display: grid;
     grid-template-rows: 3fr 2fr 1fr;
+
 
   }
 
@@ -40,6 +44,7 @@
   #navbar h1 {
     line-height: 1.7rem;
     font-size: 2rem;
+    margin-left: 15px;
   }
 
   .btn {
@@ -50,6 +55,9 @@
     padding: .2rem;
     margin-bottom: .2rem;
     width: 60px;
+    font-family: sans-serif;
+    margin-left: 90px;
+
   }
 
   .btn:hover {
@@ -57,10 +65,10 @@
     cursor: pointer;
   }
 
-  #main form{
-    display: grid;
-    padding: 75px;
-    align-items: center;
+  #main div {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
   }
 
 
@@ -70,35 +78,20 @@
 <body>
 
 <nav id="navbar">
-  <a href="{%url 'home'%}">
-    <img src="{% media "pata_index.png" %}">
-  </a>
 
+  <img src="{% static "pata_index.png" %}">
   <h1>Pet <br> Rec</h1>
   <div>
-    <button class="btn" >
-      <a href="{% url 'cadastro' %}"
-      Cadastro
-    </button>
+    <button type="button" class="btn"> Cadastro</button>
     <br>
-    <button class="btn"> Login</button>
+
+    <button type="button" class="btn"> Login</button>
     <br>
-    <button class="btn"> Anunciar</button>
+    <button type="button" class="btn"> Anunciar</button>
   </div>
 
 </nav>
 
-<main id="main">
-<form method="post">
-  {%csrf_token%}
-  {{ form.as_p }}
-  <br>
-  <br>
-  <button type="submit">Enviar</button>
-
-</form>
-
-</main>
 
 </body>
 </html>
