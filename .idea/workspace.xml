@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13f61814-543f-4b17-ae08-87d1f7ca1f06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/petrec/Templates/petrec/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petrec/Templates/petrec/anuncio.html" beforeDir="false" afterPath="$PROJECT_DIR$/petrec/Templates/petrec/anuncio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petrec/Templates/petrec/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/petrec/Templates/petrec/cadastro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petrec/Templates/petrec/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/petrec/Templates/petrec/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petrec/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/petrec/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="13f61814-543f-4b17-ae08-87d1f7ca1f06" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/petrec/Templates/petrec/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="121" column="8" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
+            <state relative-caret-position="275">
+              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
             </state>
           </provider>
         </entry>
@@ -138,8 +128,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="417" />
     <option name="y" value="23" />
-    <option name="width" value="1366" />
+    <option name="width" value="949" />
     <option name="height" value="706" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -253,18 +244,17 @@
       <updated>1571698334286</updated>
       <workItem from="1571698337772" duration="603000" />
       <workItem from="1571699024870" duration="5899000" />
-      <workItem from="1572303065469" duration="29716000" />
+      <workItem from="1572303065469" duration="30186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36218000" />
+    <option name="totallyTimeSpent" value="36688000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="706" extended-state="0" />
-    <editor active="true" />
+    <frame x="417" y="23" width="949" height="706" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16993958" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24807057" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -398,8 +388,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/petrec/Templates/petrec/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="121" column="8" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
+        <state relative-caret-position="275">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
         </state>
       </provider>
     </entry>
