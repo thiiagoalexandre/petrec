@@ -28,8 +28,14 @@
   }
 
   #main {
-    display: grid;
-    grid-template-rows: 3fr 2fr 1fr;
+    display: flex;
+    flex-direction: column ;
+    margin-left: 30px;
+    margin-right: 200px;
+    margin-top: 50px;
+    border-radius: 17px;
+
+
 
 
   }
@@ -71,6 +77,12 @@
     margin-top: 25px;
   }
 
+  .input{
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: 10px;
+  }
+
 
 </style>
 
@@ -78,29 +90,30 @@
 <body>
 
 <nav id="navbar">
+  <a href="{% url 'home' %}">
+    <img src="{% static "pata_index.png" %}">
+  </a>
 
-  <img src="{% static "pata_index.png" %}">
   <h1>Pet <br> Rec</h1>
   <div>
-    <button type="button" class="btn"> Cadastro</button>
+    <button type="button" class="btn"><a href="{% url 'cadastro' %}">Cadastro</a></button>
     <br>
-
-    <button type="button" class="btn"> Login</button>
-    <br>
-    <button type="button" class="btn"> Anunciar</button>
+    <button type="button" class="btn">Anunciar</button>
   </div>
 
 </nav>
-<main id="main">
-  <input type="text" placeholder="Nome Completo" >
-  <input type="text" placeholder="CPF" >
-  <input type="text" placeholder="Telefone" >
-  <input type="text" placeholder="Email" >
-  <input type="password" placeholder="Senha" >
-  <input type="password" placeholder="Confirma Senha">
-  <button type="submit">Entrar</button>
-</main>
 
+
+<main id="main">
+  <input type="text" class="input" placeholder="Nome Completo" >
+  <input type="text" class="input" placeholder="CPF">
+  <input type="text" class="input" placeholder="Telefone">
+  <input type="text" class="input" placeholder="Email">
+  <input type="password" class="input" placeholder="Senha">
+  <input type="password" class="input" placeholder="Confirmar senha">
+  <button type="submit" class="input">Entrar</button>
+</main>
 
 </body>
 </html>
+

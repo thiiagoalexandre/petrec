@@ -13,8 +13,11 @@ def anuncio(request):
 def login(request):
     return render(request, 'petrec/login.html')
 
-
 def cadastro(request):
+    return render(request, 'petrec/cadastro.html')
+
+
+def anunciar(request):
     data = {}
     form = AddDog(request.POST or None)
     if form.is_valid():

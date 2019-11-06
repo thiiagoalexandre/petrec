@@ -74,14 +74,14 @@
   #box1 {
     width: 300px;
     height: 300px;
-    background-color: #a9b478;
-    opacity: 0.4;
+    background-color: rgba(169, 180, 120, 0.4);
     border-radius: 17px;
   }
 
-  #pesq {
-    margin-top: 90px;
+  .box2 {
+    margin-top: 30rem;
   }
+
 
 </style>
 
@@ -90,7 +90,10 @@
 
 <nav id="navbar">
 
-  <img src="{% static "pata_index.png" %}">
+  <a href="{% url 'home' %}">
+    <img src="{% static "pata_index.png" %}">
+  </a>
+
   <h1>Pet <br> Rec</h1>
   <div>
     <button type="button" class="btn"><a href="{% url 'cadastro' %}">Cadastro</a></button>
@@ -98,7 +101,7 @@
 
     <button type="button" class="btn"><a href="{% url 'login' %}">Login</a></button>
     <br>
-    <button type="button" class="btn"><a href="{% url 'anuncio' %}">Anunciar</a></button>
+    <button type="button" class="btn">Anunciar</button>
   </div>
 
 </nav>
@@ -115,7 +118,8 @@
       Anuncie aqui para que possa encontrá-lo
     </p>
   </div>
-  <div id="pesq">
+
+  <div class="box2">
     <input type="text" placeholder="Pesquisar">
     <button type="submit"></button>
 

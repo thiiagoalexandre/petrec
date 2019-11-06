@@ -79,13 +79,14 @@
 
 <nav id="navbar">
 
-  <img src="{% static "pata_index.png" %}">
+  <a href="{% url 'home' %}">
+    <img src="{% static "pata_index.png" %}">
+  </a>
   <h1>Pet <br> Rec</h1>
   <div>
-    <button type="button" class="btn"> Cadastro</button>
+    <button type="button" class="btn"> <a href="{% url 'cadastro' %}">Cadastro</a></button>
     <br>
-
-    <button type="button" class="btn"> Login</button>
+    <button type="button" class="btn"> <a href="{% url 'login' %}">Login</a></button>
     <br>
     <button type="button" class="btn"> Anunciar</button>
   </div>
