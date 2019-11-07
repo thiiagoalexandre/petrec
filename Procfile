@@ -1,1 +1,1 @@
-web: gunicorn petrec.wsgi
+web: gunicorn web.wsgi
