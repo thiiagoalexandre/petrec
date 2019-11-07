@@ -78,8 +78,24 @@
     border-radius: 17px;
   }
 
-  .box2 {
-    margin-top: 30rem;
+  .inp {
+    margin-top: 10rem;
+    border-radius: 17px;
+    width: 200px;
+    padding: .5rem;
+  }
+
+  .but{
+    margin-top: 10rem;
+    width: 70px;
+    padding: 9px;
+    border-radius: 17px;
+    background-color: #3f51b5;
+  }
+
+  .lupa{
+    width: 15px;
+    height: 15px;
   }
 
 
@@ -118,12 +134,11 @@
       Anuncie aqui para que possa encontrá-lo
     </p>
   </div>
+  <input type="text" class="inp" placeholder="Pesquisar">
 
-  <div class="box2">
-    <input type="text" placeholder="Pesquisar">
-    <button type="submit"></button>
+  <button type="Buton" class="but"><img class="lupa" src="{% static 'lupa.png' %}"/>
 
-  </div>
+
 
 </main>
 
