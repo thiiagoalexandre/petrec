@@ -29,13 +29,11 @@
 
   #main {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     margin-left: 30px;
     margin-right: 200px;
     margin-top: 50px;
     border-radius: 17px;
-
-
 
 
   }
@@ -77,13 +75,13 @@
     margin-top: 25px;
   }
 
-  .input{
+  .input {
     margin-bottom: 1rem;
     padding: .5rem;
     border-radius: 10px;
   }
 
-  .but{
+  .but {
     color: #ffffff;
     background-color: #3f51b5;
     margin-bottom: 1rem;
@@ -113,13 +111,19 @@
 
 
 <main id="main">
-  <input type="text" class="input" placeholder="Nome Completo" >
-  <input type="text" class="input" placeholder="CPF">
-  <input type="text" class="input" placeholder="Telefone">
-  <input type="text" class="input" placeholder="Email">
-  <input type="password" class="input" placeholder="Senha">
-  <input type="password" class="input" placeholder="Confirmar senha">
-  <button type="submit" class="but">Entrar</button>
+  <form method="POST">
+    {% csrf_token %}
+
+    <input type="text" class="input" placeholder="Nome Completo">
+    <input type="text" class="input" placeholder="CPF">
+    <input type="text" class="input" placeholder="Telefone">
+    <input type="text" class="input" placeholder="Email">
+    <input type="password" class="input" placeholder="Senha">
+    <input type="password" class="input" placeholder="Confirmar senha">
+    <button type="submit" class="but">Entrar</button>
+
+  </form>
+
 </main>
 
 </body>

@@ -19,7 +19,7 @@ from petrec.views import home, anuncio, cadastro, login
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
-    path('home/', home, name='home'),
+    path('', home, name='home'),
     path('anuncio/', anuncio, name='anuncio'),
     path('cadastro/', cadastro, name='cadastro'),
     path('login/', login, name='login'),
