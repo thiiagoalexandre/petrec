@@ -11,6 +11,7 @@ install_requires = [
     'django',
     'gunicorn',
     'django-heroku',
+    'Pillow',
     ]
 
 
