@@ -1,11 +1,11 @@
 from django.forms.widgets import ClearableFileInput
 from django import forms
-from .models import TB_Cachorro
+from .models import Cachorro
 
 
 class AddDog(forms.ModelForm):
     foto = forms.ImageField(widget=ClearableFileInput)
 
     class Meta:
-        model = TB_Cachorro
+        model = Cachorro
         fields = '__all__'

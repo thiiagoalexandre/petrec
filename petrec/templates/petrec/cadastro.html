@@ -114,12 +114,11 @@
   <form method="POST">
     {% csrf_token %}
 
-    <input type="text" class="input" placeholder="Nome Completo"><br>
-    <input type="text" class="input" placeholder="CPF"><br>
-    <input type="text" class="input" placeholder="Telefone"><br>
-    <input type="text" class="input" placeholder="Email"><br>
-    <input type="password" class="input" placeholder="Senha"><br>
-    <input type="password" class="input" placeholder="Confirmar senha"><br>
+    <input type="text" name="nome" class="input" placeholder="Nome Completo"><br>
+    <input type="text" name="cpf" class="input" placeholder="CPF"><br>
+    <input type="text" name="telefone" class="input" placeholder="Telefone"><br>
+    <input type="text" name="email" class="input" placeholder="Email"><br>
+    <input type="password" name="senha" class="input" placeholder="Senha"><br>
     <button type="submit" class="but">Entrar</button>
 
   </form>
