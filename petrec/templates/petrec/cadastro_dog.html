@@ -81,6 +81,7 @@
     border-radius: 10px;
   }
 
+
   .but {
     color: #ffffff;
     background-color: #3f51b5;
@@ -114,12 +115,17 @@
   <form method="POST">
     {% csrf_token %}
 
-    <input type="text" name="nome" class="input" placeholder="Nome Completo"><br>
-    <input type="text" name="cpf" class="input" placeholder="CPF"><br>
-    <input type="text" name="telefone" class="input" placeholder="Telefone"><br>
-    <input type="text" name="email" class="input" placeholder="Email"><br>
-    <input type="password" name="senha" class="input" placeholder="Senha"><br>
-    <button type="submit" class="but">Cadastrar</button>
+    <input type="text" name="nome_c" class="input" placeholder="Nome do Cachorro"><br>
+    <input type="text" name="descricao" class="input" placeholder="Descrição do Dog"><br>
+    <input type="text" name="raca" class="input" placeholder="Raça do Dog"><br>
+    <input type="text" name="local" class="input" placeholder="Local que o dog foi perdido ou encontrado"><br>
+    <select name="sexo" class="input">
+      <option value="M">M</option>
+      <option value="F">F</option>
+    </select><br>
+    <input type="text" name="recompensa" class="input" placeholder="Recompensa caso ofereça"><br>
+{#    <input type="file" name="foto" class="input" placeholder="Senha"><br>#}
+    <button type="submit" class="but">Enviar</button>
 
   </form>
 
