@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13f61814-543f-4b17-ae08-87d1f7ca1f06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petrec/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/petrec/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petrec/templates/petrec/anuncio.html" beforeDir="false" afterPath="$PROJECT_DIR$/petrec/templates/petrec/anuncio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petrec/templates/petrec/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/petrec/templates/petrec/cadastro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petrec/templates/petrec/cadastro_dog.html" beforeDir="false" afterPath="$PROJECT_DIR$/petrec/templates/petrec/cadastro_dog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petrec/templates/petrec/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/petrec/templates/petrec/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petrec/templates/petrec/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/petrec/templates/petrec/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petrec/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/petrec/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="13f61814-543f-4b17-ae08-87d1f7ca1f06" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,16 +296,15 @@
       <workItem from="1573077907003" duration="12372000" />
       <workItem from="1574086414070" duration="1036000" />
       <workItem from="1574204379715" duration="7734000" />
-      <workItem from="1574881537275" duration="1744000" />
+      <workItem from="1574881537275" duration="1950000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61225000" />
+    <option name="totallyTimeSpent" value="61431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="706" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18731117" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
