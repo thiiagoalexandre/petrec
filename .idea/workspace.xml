@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13f61814-543f-4b17-ae08-87d1f7ca1f06" name="Default Changelist" comment="" />
+    <list default="true" id="13f61814-543f-4b17-ae08-87d1f7ca1f06" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/petrec/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/petrec/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petrec/templates/petrec/anuncio.html" beforeDir="false" afterPath="$PROJECT_DIR$/petrec/templates/petrec/anuncio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petrec/templates/petrec/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/petrec/templates/petrec/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/urls.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="260">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
               <folding>
                 <element signature="e#637#665#0" expanded="true" />
               </folding>
@@ -90,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/petrec/templates/petrec/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="245">
-              <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+              <caret line="139" selection-start-line="139" selection-end-line="139" />
             </state>
           </provider>
         </entry>
@@ -102,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/petrec/templates/petrec/cadastro.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="125" column="7" lean-forward="true" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
+            <state relative-caret-position="-9">
+              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
             </state>
           </provider>
         </entry>
@@ -117,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/petrec/templates/petrec/anuncio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="96" column="18" lean-forward="true" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
+            <state relative-caret-position="178">
+              <caret line="96" column="18" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -159,14 +164,14 @@
         <option value="$PROJECT_DIR$/petrec/admin.py" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/petrec/form.py" />
-        <option value="$PROJECT_DIR$/web/urls.py" />
-        <option value="$PROJECT_DIR$/petrec/models.py" />
         <option value="$PROJECT_DIR$/petrec/templates/petrec/cadastro_dog.html" />
         <option value="$PROJECT_DIR$/petrec/templates/petrec/login.html" />
-        <option value="$PROJECT_DIR$/petrec/templates/petrec/anuncio.html" />
         <option value="$PROJECT_DIR$/petrec/views.py" />
         <option value="$PROJECT_DIR$/petrec/templates/petrec/cadastro.html" />
+        <option value="$PROJECT_DIR$/petrec/models.py" />
+        <option value="$PROJECT_DIR$/web/urls.py" />
         <option value="$PROJECT_DIR$/petrec/templates/petrec/home.html" />
+        <option value="$PROJECT_DIR$/petrec/templates/petrec/anuncio.html" />
       </list>
     </option>
   </component>
@@ -296,15 +301,16 @@
       <workItem from="1573077907003" duration="12372000" />
       <workItem from="1574086414070" duration="1036000" />
       <workItem from="1574204379715" duration="7734000" />
-      <workItem from="1574881537275" duration="1950000" />
+      <workItem from="1574881537275" duration="2511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61431000" />
+    <option name="totallyTimeSpent" value="61992000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="706" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18731117" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -430,20 +436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/petrec/templates/petrec/anuncio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="96" column="18" lean-forward="true" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/petrec/templates/petrec/cadastro_dog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="107" column="81" lean-forward="true" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/petrec/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -456,25 +448,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="260">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
           <folding>
             <element signature="e#637#665#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/petrec/templates/petrec/cadastro.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="125" column="7" lean-forward="true" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/petrec/templates/petrec/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
-          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petrec/templates/petrec/cadastro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petrec/templates/petrec/cadastro_dog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="107" column="81" lean-forward="true" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petrec/templates/petrec/anuncio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="96" column="18" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
         </state>
       </provider>
     </entry>

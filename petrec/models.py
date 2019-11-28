@@ -13,7 +13,6 @@ class Usuario(models.Model):
         return str(self.id)
 
 
-
 class Cachorro(models.Model):
     nome_c = models.CharField(max_length=100, blank=False)
     descricao = models.CharField(max_length=500, blank=False)

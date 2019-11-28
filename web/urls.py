@@ -26,4 +26,3 @@ urlpatterns = [
     path('login/', login, name='login'),
 
 ]
-
