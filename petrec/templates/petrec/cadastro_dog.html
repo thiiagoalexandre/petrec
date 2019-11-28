@@ -105,7 +105,7 @@
   <div>
     <button type="button" class="btn"><a href="{% url 'login' %}">Login</a></button>
     <br>
-    <button type="button" class="btn">Anunciar</button>
+    <button type="button" class="btn"><a href="{% url 'anunciar' %}">Anunciar</a></button>
   </div>
 
 </nav>
@@ -119,12 +119,12 @@
     <input type="text" name="descricao" class="input" placeholder="Descrição do Dog"><br>
     <input type="text" name="raca" class="input" placeholder="Raça do Dog"><br>
     <input type="text" name="local" class="input" placeholder="Local que o dog foi perdido ou encontrado"><br>
-    <select name="sexo" class="input">
+    <p>Sexo do Dog <select name="sexo" class="input">
       <option value="M">M</option>
       <option value="F">F</option>
     </select><br>
     <input type="text" name="recompensa" class="input" placeholder="Recompensa caso ofereça"><br>
-{#    <input type="file" name="foto" class="input" placeholder="Senha"><br>#}
+    <input type="file" name="foto"><br>
     <button type="submit" class="but">Enviar</button>
 
   </form>

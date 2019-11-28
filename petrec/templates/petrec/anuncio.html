@@ -84,15 +84,25 @@
   </a>
   <h1>Pet <br> Rec</h1>
   <div>
-    <button type="button" class="btn"> <a href="{% url 'cadastro' %}">Cadastro</a></button>
+    <button type="button" class="btn"><a href="{% url 'cadastro' %}">Cadastro</a></button>
     <br>
-    <button type="button" class="btn"> <a href="{% url 'login' %}">Login</a></button>
+    <button type="button" class="btn"><a href="{% url 'login' %}">Login</a></button>
     <br>
-    <button type="button" class="btn"> Anunciar</button>
+    <button type="button" class="btn"> <a href="{% url 'anunciar' %}">Anunciar</a></button>
   </div>
 
 </nav>
-
+{% block content %}
+  <p>{% for d in p %}
+    {{ d.nome_c }}
+    {{ d.descrição }}<br>
+    {{ d.raca }}<br>
+    {{ d.local }}<br>
+    {{ d.sexo }}<br>
+    {{ d.recompensa }}<br>
+    {{ d.foto }}<br>
+  {% endfor %}</p>
+{% endblock %}
 
 </body>
 </html>

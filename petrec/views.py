@@ -1,7 +1,6 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, get_object_or_404
 from .form import AddDog, AddUser
 from .models import Usuario, Cachorro
-
 
 
 def home(request):
@@ -9,11 +8,13 @@ def home(request):
 
 
 def anuncio(request):
-    return render(request, 'petrec/anuncio.html')
+    p = Cachorro.objects.all().order_by('-nome_c')
+    return render(request, 'petrec/anuncio.html', {'p': p})
 
 
 def login(request):
     return render(request, 'petrec/login.html')
+
 
 def cadastro(request):
     form = AddUser(request.POST or None)
@@ -23,27 +24,24 @@ def cadastro(request):
         telefone = request.POST.get('telefone')
         email = request.POST.get('email')
         senha = request.POST.get('senha')
-        Usuario.objects.create(nome=nome,cpf=cpf,telefone=telefone, email=email,senha=senha,)
+        Usuario.objects.create(nome=nome, cpf=cpf, telefone=telefone, email=email, senha=senha, )
         return render(request, 'petrec/home.html')
     else:
         return render(request, 'petrec/cadastro.html')
 
 
-
-
-
 def anunciar(request):
-    print(request.POST)
     form = AddDog(request.POST or None)
     if form.is_valid():
-        print('faffhusgh')
         nome_c = request.POST.get('nome_c')
         descricao = request.POST.get('descricao')
         raca = request.POST.get('raca')
         local = request.POST.get('local')
-        sexo = request.POST.get('recompensa')
-        # foto = request.POST.get('foto')
-        Cachorro.objects.create(nome=nome_c, cpf=descricao, telefone=raca, email=local, senha=sexo, foto=foto)
-        return render(request, 'petrec/home.html') #criar pagina de view para o dog
+        sexo = request.POST.get('sexo')
+        recompensa = request.POST.get('recompensa')
+        foto = request.FILES.get('foto')
+        Cachorro.objects.create(nome_c=nome_c, descricao=descricao, raca=raca, local=local, sexo=sexo,
+                                recompensa=recompensa, foto=foto)
+        return render(request, 'petrec/anuncio.html')  # criar pagina de view para o dog
     else:
         return render(request, 'petrec/cadastro_dog.html')

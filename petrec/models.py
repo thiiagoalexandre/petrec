@@ -21,7 +21,7 @@ class Cachorro(models.Model):
     local = models.CharField(max_length=100, blank=False)
     sexo = models.CharField(max_length=1, blank=False)
     recompensa = models.CharField(max_length=10)
-    foto = models.ImageField(upload_to='media')
+    foto = models.ImageField(upload_to='media', blank=True)
 
     def __str__(self):
         return str(self.id)
