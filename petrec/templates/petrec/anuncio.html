@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <title>Home PetRec</title>
 </head>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 <style>
   * {
@@ -71,6 +74,16 @@
     margin-top: 25px;
   }
 
+  div.polaroid {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+
+  div.container {
+    padding: 10px;
+  }
+
 
 </style>
 
@@ -92,16 +105,26 @@
   </div>
 
 </nav>
-{% block content %}
-  <p>{% for d in p %}
-    {{ d.nome_c }}
-    {{ d.descrição }}<br>
-    {{ d.raca }}<br>
-    {{ d.local }}<br>
-    {{ d.sexo }}<br>
-    {{ d.recompensa }}<br>
-  {% endfor %}</p>
-{% endblock %}
+
+<div class="container">
+  <div class="row">
+    {% for d in p %}
+      <div class="col-sm-4">
+        <a href="../detail/{{ d.id }}">
+          <div class="polaroid">
+            <img src="" alt="" style="width:80%">
+            <div class="container">
+              <p>{{ d.nome_c }}</p>
+            </div>
+          </div>
+        </a>
+        <br>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+</div>
+
 
 </body>
 </html>
