@@ -127,16 +127,18 @@
   <div id="box1"/>
   <div>
     <p>
-      Parte onde conta uma história e
-      o funcionamento<br>
-      do site. Seu pet querido está perdido ou encontrou<br>
-      algum na rua? <br>
-      Anuncie aqui para que possa encontrá-lo
+      <br>
+      Você perdeu seu cachorro ou
+      encontrou algum doguinho por ai?<br>
+      Aqui você poderá anunciá-lo através<br>
+      de nossa ferramenta para que consiga encontrá-lo ou devolve-lo. <br>
+      Se ficou com alguma dúvida, pesquise abaixo para ver
+      o funcionamento.
     </p>
   </div>
   <input type="text" class="inp" placeholder="Pesquisar">
 
-  <button type="submit" class="but"><img class="lupa" src="{% static 'lupa.png' %}"/>
+  <button type="submit" class="but" ><img class="lupa" src="{% static 'lupa.png' %}"/><a href="{% url 'anuncio' %}"/>_
 
 </main>
 
