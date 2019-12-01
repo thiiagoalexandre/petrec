@@ -31,7 +31,6 @@
   }
 
 
-
   #navbar img {
     width: 85px;
     height: 85px;
@@ -102,16 +101,15 @@
 </nav>
 
 
-
 <div class="container">
   <div class="row">
-    {% for d in p %}
-      <div class="col-sm-4">
-        <a href="../detail/{{ d.id }}">
+    {% for p in pet %}
+      <div class="col-sm-3">
+        <a href="../detalhe/{{ p.id }}">
           <div class="polaroid">
             <img src="" alt="" style="width:80%">
             <div class="container">
-              <p>{{ d.nome_c }}</p>
+              <p>{{ p.nome_c }}</p>
             </div>
           </div>
         </a>

@@ -8,8 +8,8 @@ def home(request):
 
 
 def anuncio(request):
-    p = Cachorro.objects.all().order_by('-nome_c')
-    return render(request, 'petrec/anuncio.html', {'p': p})
+    pet = Cachorro.objects.all().order_by('-nome_c')
+    return render(request, 'petrec/anuncio.html', {'pet': pet})
 
 
 def login(request):
@@ -41,6 +41,11 @@ def anunciar(request):
         recompensa = request.POST.get('recompensa')
         foto = request.FILES.get('foto')
         Cachorro.objects.create(nome_c=nome_c, descricao=descricao, raca=raca, local=local, sexo=sexo, recompensa=recompensa, foto=foto)
-        return render(request, 'petrec/anuncio.html')  # criar pagina de view para o dog
+        return render(request, 'petrec/detalhe.html')  # criar pagina de view para o dog
     else:
         return render(request, 'petrec/cadastro_dog.html')
+
+
+def detalhe(request):
+    pet = Cachorro.objects.all().order_by('-nome_c')
+    return render(request, 'petrec/datelhe.html', {'pet': pet})
