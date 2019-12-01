@@ -8,7 +8,7 @@ def home(request):
 
 
 def anuncio(request):
-    pet = Cachorro.objects.all().order_by('-nome_c')
+    pet = Cachorro.objects.all().order_by('id')
     return render(request, 'petrec/anuncio.html', {'pet': pet})
 
 
