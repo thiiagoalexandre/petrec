@@ -9,7 +9,7 @@ def home(request):
 
 def anuncio(request):
     pet = Cachorro.objects.all().order_by('id')
-    return render(request, 'petrec/anuncio.html', {'pet': pet})
+    return render(request, 'petrec/anunciar/anuncio.html', {'pet': pet})
 
 
 def login(request):
