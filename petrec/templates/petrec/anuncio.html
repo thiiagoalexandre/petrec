@@ -30,6 +30,12 @@
     color: #ffffff;
   }
 
+  #main {
+    display: grid;
+    grid-template-rows: 3fr 2fr 1fr;
+
+
+  }
 
   #navbar img {
     width: 85px;
@@ -101,15 +107,16 @@
 </nav>
 
 
+
 <div class="container">
   <div class="row">
-    {% for p in pet %}
-      <div class="col-sm-3">
-        <a href="petrec/anunicar/anuncio/detalhe/{{ p.id }}">
+    {% for d in pet %}
+      <div class="col-sm-4">
+        <a href="../detail/{{ d.id }}">
           <div class="polaroid">
             <img src="" alt="" style="width:80%">
             <div class="container">
-              <p>{{ p.nome_c }}</p>
+              <p>{{ d.nome_c }}</p>
             </div>
           </div>
         </a>
